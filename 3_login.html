@@ -36,6 +36,7 @@
             height: 100vh;
         }
         .form_container {
+            position: relative;
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 90%;
@@ -44,26 +45,22 @@
         }
         .logo {
             justify-self: center;
-            width: 150px;
-            height: 27px;
+            width: 204px;
+            height: 38px;
             margin-bottom: 60px;
-        }
-        .title {
-            text-align: center;
-            margin-bottom: 12px;
-            font-size: var(--lg);
-        }
-        .subtitle {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 32px;
-            font-size: var(--md);
-            font-weight: 300;
-            color: var(--very-light-pink);
         }
         .form {
             display: flex;
             flex-direction: column;
+        }
+        .form a {
+            margin-top: 30px;
+            margin-bottom: 52px;
+            text-align: center;
+            font-size: var(--sm);
+            font-weight: 500;
+            color: var(--hospital-green);
+            text-decoration: none;
         }
         .label {
             font-size: var(--sm);
@@ -103,9 +100,30 @@
         .confirm_button {
             margin-top: 14px;
         }
+        .secondary_button {
+            width: 100%;
+            min-width: 270px;
+            max-width: 340px;
+            height: 52px;
+            margin: 0;
+            font-size: var(--md);
+            font-weight: bold;
+            background: var(--white);
+            border-radius: 10px;
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+            cursor: pointer;
+        }
+        .sign-up_button {
+            position: absolute;
+            bottom: -100px;
+        }
         @media (min-width: 769px) {
             .logo {
                 visibility: hidden;
+            }
+            .sign-up_button {
+                bottom: -56px;
             }
         }
     </style>
@@ -118,19 +136,21 @@
             <div class="form_container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-                <h1 class="title">Create a new password</h1>
-
-                <p class="subtitle">Enter a new password for your account</p>
 
                 <form action="/" class="form">
-                    <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-password">
+                    <label for="email" class="label">Email address</label>
+                    <input type="email" id="email" placeholder="some@example.com" class="input input_email">
 
-                    <label for="re-enter-password" class="label">Re-enter password</label> <!--El for del label va a ser el id que tenga mi input-->
-                    <input type="password" id="re-enter-password" placeholder="*********" class="input input-password"> <!--El id del input debe ser el mismo for del label-->
+                    <label for="password" class="label">Password</label> <!--El for del label va a ser el id que tenga mi input-->
+                    <input type="password" id="password" placeholder="*********" class="input input-password"> <!--El id del input debe ser el mismo for del label-->
 
-                    <input type="submit" value="Confirm" class="primary_button confirm_button"> <!--Podemos tener un botón dentro de un formulario haciendo uso de un input, colocandole type = submit, y el value va a ser el texto que tendrá este botón. -->
+                    <input type="submit" value="Log in" class="primary_button login_button"> <!--Podemos tener un botón dentro de un formulario haciendo uso de un input, colocandole type = submit, y el value va a ser el texto que tendrá este botón. -->
+                    <a href="#">Forgot my password</a>
                 </form>
+
+                <button class="secondary_button sign-up_button">
+                    Sign up
+                </button>
             </div>
         </section>
     </main>
