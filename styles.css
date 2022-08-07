@@ -68,6 +68,12 @@ nav {
     margin-right: 12px;
     color: var(--very-light-pink);
     font-size: var(--sm);
+    cursor: pointer;
+}
+.navbar-email:hover {
+    border: 1px solid var(--hospital-green);
+    border-radius: 4px;
+    color: var(--hospital-green);
 }
 .navbar-shopping-cart {
     position: relative;
