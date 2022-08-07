@@ -1,3 +1,4 @@
+/*Estilos generales*/
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -17,7 +18,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
-
+/*Fin de estilos generales*/
 /*Clases para interactuar con javascript*/
 .inactive {
     display: none;
@@ -132,6 +133,53 @@ nav {
     color: var(--black);
 }
 /*Fin de estilos del menu desktop*/
+
+/*Estilos del menú mobile*/
+.mobile_menu {
+    position: absolute;
+    top: 61px;
+    padding: 24px;
+    background: var(--white);
+}
+.oculto {
+    left: -200px;
+    transform: translateX(-200px);
+    transition: transform 300ms;
+}
+.activo {
+    transform: translateX(200px);
+    transition: transform 300ms;
+}
+.mobile_menu a {
+    font-size: var(--md);
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.mobile_menu ul {
+    padding: 0;
+    margin: 24px 0 0 0;
+    list-style: none;
+}
+.mobile_menu ul li {
+    margin-bottom: 24px;
+}
+.mobile_menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.mobile_menu .sign_out {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+.mobile_menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile_menu ul:nth-child(3) {
+    position: absolute;
+    bottom: -65px;
+}
+/*Fin de estilos del menu mobile*/
 @media (max-width: 769px) {
     /*Media queries del navbar*/
     .menu-icon {
@@ -144,4 +192,12 @@ nav {
         display: none;
     }
     /*Fin de media queries del navbar*/
+    .desktop_menu {
+        display: none;
+    }
+}
+@media (min-width: 770px) {
+    .mobile_menu {
+        display: none;
+    }
 }

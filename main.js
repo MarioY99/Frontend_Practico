@@ -7,3 +7,15 @@ menuEmail.addEventListener('click', toggleDesktopMenu);
 function toggleDesktopMenu() {
     desktopMenu.classList.toggle('inactive');
 };
+
+//Fusion del menu mobile
+const burguerMenu = document.querySelector('.menu-icon');
+const mobileMenu = document.querySelector('.mobile_menu');
+
+mobileMenu.classList.remove('activo');
+
+burguerMenu.addEventListener('click', toggleMobileMenu);
+
+function toggleMobileMenu (){
+    mobileMenu.classList.toggle('activo')
+}
