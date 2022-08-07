@@ -5,6 +5,5 @@ const desktopMenu = document.querySelector ('.desktop_menu');
 menuEmail.addEventListener('click', toggleDesktopMenu);
 //y creo mi función a realizar.
 function toggleDesktopMenu() {
-    console.log('click')
     desktopMenu.classList.toggle('inactive');
-}
+};
