@@ -78,6 +78,7 @@ nav {
 }
 .navbar-shopping-cart {
     position: relative;
+    cursor: pointer;
 }
 .navbar-shopping-cart div {
     display: flex;
@@ -180,6 +181,102 @@ nav {
     bottom: -65px;
 }
 /*Fin de estilos del menu mobile*/
+
+/*Estilos Aside (Product-Detail) del carrito de compras*/
+.my-order {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-width: 300px;
+    max-width: 384px;
+    height: 100vh;
+    padding: 0 14px;
+    background: var(--white);
+}
+.title-container {
+    display: flex;
+}
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+
+}
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 384px;
+    padding: 5px;
+}
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center; /*Para alinear nuestro texto al centro*/
+}
+.shopping-cart figure {
+    margin: 0;
+}
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-cart p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.shopping-cart p:nth-child(3) {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.primary_button {
+    width: 100%;
+    min-width: 270px;
+    max-width: 340px;
+    height: 52px;
+    margin: 0;
+    font-size: var(--md);
+    font-weight: bold;
+    background: var(--hospital-green);
+    border-radius: 10px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+/*Fin de estilos del aside de carrito de compras*/
 @media (max-width: 769px) {
     /*Media queries del navbar*/
     .menu-icon {
