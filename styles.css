@@ -286,6 +286,7 @@ nav {
     width: 100%;
     min-width: 320px;
     max-width: 380px;
+    height: calc(100vh - 61px);
     background: var(--white);
 }
 .product-detail_close {
@@ -368,6 +369,7 @@ nav {
     min-width: 240px;
     border-radius: 20px;
     object-fit: cover; /*Esta propiedad nos dice que la imagen va a tener su tamaño independientemente del width y del height que le coloquemos no cambiará su tamaño interno, es decir, se verá como originalmente la coloquemos, que se adecue al tamaño que le coloquemos con su diseño original.*/
+    cursor: pointer;
 }
 .product_info {
     display: flex;

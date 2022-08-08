@@ -7,14 +7,20 @@ const mobileMenu = document.querySelector('.mobile_menu');
 const menuShoppingCart = document.querySelector('.navbar-shopping-cart');
 const aside = document.querySelector('.my-order');
 const cardsContainer = document.querySelector('.cards_container');
+const asideDetail = document.querySelector('.product-detail');
+const closeAsideDetail = document.querySelector('.product-detail_close');
 
 //Luego creo mi event listener con el evento a escuchar y la función a realizar
 menuEmail.addEventListener('click', toggleDesktopMenu);
 //y creo mi función a realizar.
 function toggleDesktopMenu() {
     const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideDetailClosed = asideDetail.classList.contains('inactive');
     if(!isAsideClosed) {
         aside.classList.add('inactive');
+    };
+    if(!isAsideDetailClosed) {
+        asideDetail.classList.add('inactive');
     };
     desktopMenu.classList.toggle('inactive');
 };
@@ -25,8 +31,12 @@ burguerMenu.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu (){
     const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideDetailClosed = asideDetail.classList.contains('inactive');
     if(!isAsideClosed) {
         aside.classList.add('inactive');
+    };
+    if(!isAsideDetailClosed) {
+        asideDetail.classList.add('inactive');
     };
     mobileMenu.classList.toggle('activo')
 }
@@ -35,6 +45,10 @@ menuShoppingCart.addEventListener('click', toggleCarritoAside);
 function toggleCarritoAside() {
     const isDesktopMenuClosed = desktopMenu.classList.contains('inactive');
     const isMenuMobileClosed = mobileMenu.classList.contains('inactive');
+    const isAsideDetailClosed = asideDetail.classList.contains('inactive');
+    if(!isAsideDetailClosed) {
+        asideDetail.classList.add('inactive');
+    };
     if(!isDesktopMenuClosed) {
         desktopMenu.classList.add('inactive');
     };
@@ -42,7 +56,24 @@ function toggleCarritoAside() {
         mobileMenu.classList.remove('activo');
     };
     aside.classList.toggle('inactive')
-}
+};
+
+closeAsideDetail.addEventListener('click', toggleAsideDetail);
+function toggleAsideDetail() {
+    const isDesktopMenuClosed = desktopMenu.classList.contains('inactive');
+    const isMenuMobileClosed = mobileMenu.classList.contains('inactive');
+    const isAsideClosed = aside.classList.contains('inactive');
+    if (!isDesktopMenuClosed) {
+        desktopMenu.classList.add('inactive');
+    };
+    if (!isMenuMobileClosed) {
+        mobileMenu.classList.remove('activo');
+    };
+    if(!isAsideClosed) {
+        aside.classList.add('inactive');
+    }
+    asideDetail.classList.toggle('inactive');
+};
 //Generalmente las grandes compañías como mercado libre o amazon tienen una forma de trabajar en la que nuestro código recibe un array del backend que está conectado a la base de datos por medio de una API Rest la cual le manda cada artículo y lo va agregando al código del artículo y creando así cada uno de los articulos a mostrar en nuestra página de ventas.
 
 const productList = [];
@@ -131,6 +162,7 @@ function renderProducts(arr) {
     
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
+        productImg.addEventListener('click', toggleAsideDetail);
     
         const productInfo = document.createElement('div');
         productInfo.classList.add('product_info');
