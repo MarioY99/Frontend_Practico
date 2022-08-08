@@ -110,6 +110,16 @@ productList.push({
     price: 120,
     image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
+productList.push({
+    name: 'Bike',
+    price: 120,
+    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+});
+productList.push({
+    name: 'Bike',
+    price: 120,
+    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+});
 
 //Cuando estamos trabajando en un entorno profesional ya, que usamos nuestro código javascript para crear elementos de html y demás, lo mejor es usar ese bloque de código dentro de una función al momento de crearlo porque de esa manera se puede usar código nuevamente y se puede llevar un orden, por ejemplo, en este caso tenemos una lista de objetos, pero si queremos tener una lista de objetos completamente diferente, podríamos hacer uso de esa función y ya mandandole como argumento el array de esa lista de objetos nuevos.
 
