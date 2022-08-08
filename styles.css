@@ -240,6 +240,7 @@ nav {
     font-weight: bold;
 }
 .shopping-cart {
+    z-index: 4;
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
@@ -277,6 +278,48 @@ nav {
     cursor: pointer;
 }
 /*Fin de estilos del aside de carrito de compras*/
+
+/*Estilos de la página de inicio (sistema de grillas)*/
+.cards_container {
+    display: grid;
+    place-content: center; /*Para alinear la grid al centro*/
+    grid-template-columns: repeat(auto-fill, 240px); /*Como no sabemos qué cantidad de columnas vamos a necesitar por el tamaño de pantalla usamos la propiedad auto fill y el pixelaje, para que se pongan las columnas automática dependiendo de la cantidad que quepa y tengan tamaño de 240 pixeles, y cuando la pantalla termine bajen las cards para que se acoplen a la pantalla*/
+    gap: 24px;
+    margin-top: 20px;
+}
+.product_card {
+    width: 240px;
+    min-width: 240px;
+}
+.product_card > img {
+    width: 240px;
+    height: 240px;
+    min-width: 240px;
+    border-radius: 20px;
+    object-fit: cover; /*Esta propiedad nos dice que la imagen va a tener su tamaño independientemente del width y del height que le coloquemos no cambiará su tamaño interno, es decir, se verá como originalmente la coloquemos, que se adecue al tamaño que le coloquemos con su diseño original.*/
+}
+.product_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.product_info figure img {
+    width: 35px;
+    height: 35px;
+}
+.product_info div p:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.product_info div p:nth-child(2) {
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+/*Fin de codigo de página de inicio (sistema de grillas)*/
 @media (max-width: 769px) {
     /*Media queries del navbar*/
     .menu-icon {
@@ -291,6 +334,19 @@ nav {
     /*Fin de media queries del navbar*/
     .desktop_menu {
         display: none;
+    }
+    .cards_container {
+        grid-template-columns: repeat(auto-fill, 140px);
+        gap: 12px;
+    }
+    .product_card {
+        width: 140px;
+        min-width: 140px;
+    }
+    .product_card > img {
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
     }
 }
 @media (min-width: 770px) {
