@@ -137,19 +137,24 @@ nav {
 
 /*Estilos del menú mobile*/
 .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 61px;
+    width: 100%;
+    height: calc(100% - 61px);
     padding: 24px;
     background: var(--white);
 }
 .oculto {
-    left: -200px;
-    transform: translateX(-200px);
-    transition: transform 300ms;
+    left: -768px;
+    transform: translateX(-768px);
+    transition: transform 500ms;
 }
 .activo {
-    transform: translateX(200px);
-    transition: transform 300ms;
+    transform: translateX(768px);
+    transition: transform 500ms;
 }
 .mobile_menu a {
     font-size: var(--md);
@@ -159,7 +164,7 @@ nav {
 }
 .mobile_menu ul {
     padding: 0;
-    margin: 24px 0 0 0;
+    /* margin: 24px 0 0 0; */
     list-style: none;
 }
 .mobile_menu ul li {
@@ -176,10 +181,6 @@ nav {
 .mobile_menu ul:nth-child(1) {
     border-bottom: 1px solid var(--very-light-pink);
 }
-.mobile_menu ul:nth-child(3) {
-    position: absolute;
-    bottom: -65px;
-}
 /*Fin de estilos del menu mobile*/
 
 /*Estilos Aside (Product-Detail) del carrito de compras*/
@@ -189,7 +190,7 @@ nav {
     width: 100%;
     min-width: 300px;
     max-width: 384px;
-    height: 100vh;
+    height: auto;
     padding: 0 14px;
     background: var(--white);
 }
@@ -278,7 +279,76 @@ nav {
     cursor: pointer;
 }
 /*Fin de estilos del aside de carrito de compras*/
-
+/* Estilos del aside de detalle del producto*/
+.product-detail {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 380px;
+    background: var(--white);
+}
+.product-detail_close {
+    background: var(--white);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+}
+.product-detail_close:hover {
+    cursor: pointer;
+}
+.product-detail > img:nth-child(2) {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+.product-info {
+    margin: 24px 24px 0 24px;
+}
+.product-info p:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: var(--md);
+    font-weight: bold;
+}
+.product-info p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.product-info p:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.primary_button {
+    width: 100%;
+    min-width: 270px;
+    max-width: 340px;
+    height: 52px;
+    margin: 0;
+    font-size: var(--md);
+    font-weight: bold;
+    background: var(--hospital-green);
+    border-radius: 10px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+.add-to-cart_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Fin de estilos de aside detalle del producto*/
 /*Estilos de la página de inicio (sistema de grillas)*/
 .cards_container {
     display: grid;
@@ -286,6 +356,7 @@ nav {
     grid-template-columns: repeat(auto-fill, 240px); /*Como no sabemos qué cantidad de columnas vamos a necesitar por el tamaño de pantalla usamos la propiedad auto fill y el pixelaje, para que se pongan las columnas automática dependiendo de la cantidad que quepa y tengan tamaño de 240 pixeles, y cuando la pantalla termine bajen las cards para que se acoplen a la pantalla*/
     gap: 24px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .product_card {
     width: 240px;
@@ -347,6 +418,9 @@ nav {
         width: 140px;
         height: 140px;
         min-width: 140px;
+    }
+    .my-order {
+        height: calc(100vh - 61px);
     }
 }
 @media (min-width: 770px) {
