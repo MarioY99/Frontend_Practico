@@ -43,6 +43,7 @@ function toggleCarritoAside() {
     };
     aside.classList.toggle('inactive')
 }
+//Generalmente las grandes compañías como mercado libre o amazon tienen una forma de trabajar en la que nuestro código recibe un array del backend que está conectado a la base de datos por medio de una API Rest la cual le manda cada artículo y lo va agregando al código del artículo y creando así cada uno de los articulos a mostrar en nuestra página de ventas.
 
 const productList = [];
 productList.push({
