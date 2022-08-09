@@ -80,74 +80,74 @@ productList.push({
     image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Cooler Térmico',
+    price: 30,
+    image: 'https://imagenes.elpais.com/resizer/kEjdGLSZbMhbmqRDdwJss_QWBkg=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/5DROIE2ETRGKROR7PQBDRIBEYA.png',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Pants',
+    price: 25,
+    image: 'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'T-Shirt',
+    price: 20,
+    image: 'https://images.pexels.com/photos/5995818/pexels-photo-5995818.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Ram Memory',
+    price: 70,
+    image: 'https://http2.mlstatic.com/D_NQ_NP_892345-MCO44199139282_112020-O.jpg',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Laptop',
+    price: 750,
+    image: 'https://images.pexels.com/photos/18104/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Phone',
+    price: 600,
+    image: 'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Smart Watch',
+    price: 70,
+    image: 'https://images.pexels.com/photos/437038/pexels-photo-437038.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Headphones',
+    price: 45,
+    image: 'https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Shorts',
+    price: 25,
+    image: 'https://assets.adidas.com/images/w_940,f_auto,q_auto/2d22a6c92dad432f812faaa70105e561_9366/FI8318_06_laydown.jpg',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Shoes',
+    price: 60,
+    image: 'https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Football Ball',
+    price: 35,
+    image: 'https://images.pexels.com/photos/39362/the-ball-stadion-football-the-pitch-39362.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Gaming Chair',
+    price: 160,
+    image: 'https://www.profesionalreview.com/wp-content/uploads/2022/03/Drift-Rubius-Premium-Silla-gamer-oficial-del-popular-Youtuber.jpg',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'New Car',
+    price: 12000,
+    image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Mousepad',
+    price: 40,
+    image: 'https://http2.mlstatic.com/D_NQ_NP_740004-MLV46728805771_072021-W.jpg',
 });
 
 //Cuando estamos trabajando en un entorno profesional ya, que usamos nuestro código javascript para crear elementos de html y demás, lo mejor es usar ese bloque de código dentro de una función al momento de crearlo porque de esa manera se puede usar código nuevamente y se puede llevar un orden, por ejemplo, en este caso tenemos una lista de objetos, pero si queremos tener una lista de objetos completamente diferente, podríamos hacer uso de esa función y ya mandandole como argumento el array de esa lista de objetos nuevos.
